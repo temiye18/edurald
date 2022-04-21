@@ -1,0 +1,48 @@
+.projects {
+  padding: 4rem 0;
+}
+
+/* img {
+  width: 116px;
+  height: 225px;
+} */
+
+.projects h1 {
+  font-size: 3rem;
+  margin-top: -1.2rem;
+}
+.projects h5 {
+  font-size: 1.2rem;
+}
+
+.projects__container {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project__items {
+  background-color: var(--background-color);
+  color: #fff;
+  padding: 2rem 0.7rem;
+  border-radius: 5px;
+}
+
+.project__items:hover {
+  border: 2px solid var(--text-color);
+  background-color: transparent;
+  color: var(--text-color);
+}
+.project__items li {
+  padding: 0.8rem 0;
+  font-weight: 500;
+}
+.project__image {
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project__image img {
+  width: 100%;
+}
