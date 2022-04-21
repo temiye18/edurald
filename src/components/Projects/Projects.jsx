@@ -1,7 +1,7 @@
 import React from "react";
 // import { AiOutlineStar } from "react-icons/ai";
 import classes from "./Projects.module.css";
-import mtnLogo from "../../assets/mtn-logo.png";
+// import mtnLogo from "../../assets/mtn-logo.png";
 import avanteLogo from "../../assets/avante-logo.png";
 import armLogo from "../../assets/arm-logo.png";
 import paydayLogo from "../../assets/payday-investor-logo.svg";
