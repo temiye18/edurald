@@ -3,31 +3,31 @@ import classes from "./Projects.module.css";
 import mtnLogo from "../../assets/mtn-logo.png";
 import avanteLogo from "../../assets/avante-logo.png";
 import armLogo from "../../assets/arm-logo.png";
-import paydayLogo from "../../assets/payday-investor-logo.svg";
-import simplexLogo from "../../assets/simplex-logo.png";
+// import paydayLogo from "../../assets/payday-investor-logo.svg";
+// import simplexLogo from "../../assets/simplex-logo.png";
 
-const projects = [
-  {
-    id: 1,
-    logo: mtnLogo,
-  },
-  {
-    id: 2,
-    logo: armLogo,
-  },
-  {
-    id: 3,
-    logo: avanteLogo,
-  },
-  {
-    id: 4,
-    logo: paydayLogo,
-  },
-  {
-    id: 5,
-    logo: simplexLogo,
-  },
-];
+// const projects = [
+//   {
+//     id: 1,
+//     logo: mtnLogo,
+//   },
+//   {
+//     id: 2,
+//     logo: armLogo,
+//   },
+//   {
+//     id: 3,
+//     logo: avanteLogo,
+//   },
+//   {
+//     id: 4,
+//     logo: paydayLogo,
+//   },
+//   {
+//     id: 5,
+//     logo: simplexLogo,
+//   },
+// ];
 
 const Projects = () => {
   return (
