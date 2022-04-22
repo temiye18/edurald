@@ -1,0 +1,91 @@
+:root {
+	--grey: #808291;
+	--blue: #309999;
+	--lblue: #2db0db;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Manrope', sans-serif;
+}
+body {
+	padding: 0 20px;
+	max-width: 1500px;
+	margin: 0 auto;
+	min-width: 350px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 500;
+	width: fit-content;
+}
+p {
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--grey);
+	line-height: 1.65em;
+}
+h4 {
+	color: var(--blue);
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+.blue {
+	color: var(--blue);
+}
+.w-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+	grid-gap: 30px 20px;
+}
+.w-grid-home {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px 20px;
+}
+.mb-90 {
+	margin-bottom: 90px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mt-40 {
+	margin-top: 40px;
+}
+.services p {
+font-size: 16px;
+}
+@media (max-width: 850px) {
+	.w-grid-home {
+		grid-template-columns: 1fr;
+	}
+}
+@media (min-width: 1200px) {
+	.services > div:last-child {
+		display: flex;
+		gap: 1rem;
+	}
+}
+@media (min-width: 800px) {
+	.services {
+		display: flex;
+		gap: 1rem;
+	}
+	.services > div:first-child {
+		max-width: 50%;
+	}
+	.services > div:last-child {
+		max-width: 50%;
+	}
+}

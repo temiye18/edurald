@@ -1,0 +1,47 @@
+.work {
+	padding: 20px;
+	border-radius: 15px;
+	border: 1.99px solid #000;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	transition: transform 0.3s;
+}
+
+.work header img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	max-height: 50px;
+}
+.work ul {
+	font-weight: 500;
+	font-size: 15px;
+	padding-left: 20px;
+}
+.work big {
+	font-size: 15px;
+	font-weight: 600;
+}
+.work li {
+	margin-bottom: 15px;
+}
+.work :global(.footer) {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: auto;
+	padding-top: 50px;
+}
+.h1 {
+	font-size: 2.4rem;
+	text-align: center;
+	font-weight: 600;
+	margin-top: 80px;
+}
+
+@media (max-width: 600px) {
+	.h1 {
+		font-size: 2rem;
+	}
+}

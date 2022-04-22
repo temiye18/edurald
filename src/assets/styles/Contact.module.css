@@ -1,0 +1,67 @@
+.form {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	max-width: 600px;
+}
+
+.form h3 {
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+.form p {
+	font-size: 16px;
+}
+.form form {
+	margin: 35px 0 25px;
+}
+.form input,
+.form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	border: none;
+	margin-bottom: 20px;
+	border-bottom: 1px solid var(--grey);
+	border-right: 1px solid transparent;
+	font-size: 14px;
+	outline: none;
+}
+.form textarea {
+	resize: vertical;
+	height: 180px;
+}
+
+.form input:focus,
+.form textarea:focus {
+	border-right: 1px solid var(--grey);
+}
+.form form + p {
+	font-style: italic;
+}
+.form button {
+	margin: 30px 0 50px;
+}
+/* .info {
+	background-color: #a7a9b8;
+	font-weight: 500;
+	padding: 80px 10px 60px;
+}
+.info > div {
+	margin-bottom: 20px;
+}
+.info > div div {
+	font-size: 1.3rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 3px;
+}
+.info span {
+	font-size: 1.5rem;
+	margin-left: 8px;
+}
+.email {
+	transform: translateY(2px);
+}
+.info p {
+	font-size: 14px;
+} */

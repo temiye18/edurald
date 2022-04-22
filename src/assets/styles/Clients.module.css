@@ -1,0 +1,47 @@
+.slide {
+	width: 100%;
+	overflow: hidden;
+	padding: 50px 0 30px;
+}
+.all {
+	width: max-content;
+	display: flex;
+	align-items: center;
+	transition: transform 0.8s;
+}
+.all div {
+	width: calc(100vw - 40px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+.all img {
+	height: 100px;
+}
+.all:global(.two) {
+	transform: translateX(calc((100vw - 40px) * -1));
+}
+.all:global(.three) {
+	transform: translateX(calc((200vw - 80px) * -1));
+}
+.all:global(.four) {
+	transform: translateX(calc((300vw - 120px) * -1));
+}
+.controllers {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	margin-top: 2.2rem;
+}
+.controllers div {
+	width: 14px;
+	height: 14px;
+	background-color: gray;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.controllers div:global(.active) {
+	background-color: var(--blue);
+}

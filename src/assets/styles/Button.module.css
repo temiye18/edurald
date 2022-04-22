@@ -1,0 +1,21 @@
+.btn {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	text-transform: uppercase;
+	background: linear-gradient(to right, var(--lblue), var(--blue));
+	padding: 15px 25px;
+	border-radius: 40px;
+	display: inline-block;
+	width: max-content;
+	border: none;
+	word-spacing: 3px;
+	letter-spacing: 0.7px;
+}
+@media (max-width: 600px) {
+	.btn {
+		font-size: 14px;
+		padding: 12px 20px;
+	}
+}
