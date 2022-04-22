@@ -1,74 +1,70 @@
-import { useState } from 'react';
-import styles from '../assets/styles/Clients.module.css';
+import { useState } from "react";
+import styles from "../assets/styles/Clients.module.css";
 
 const Clients = () => {
-	const [state, setState] = useState('one');
+  const [state, setState] = useState("one");
 
-	const handleToggle = (e) => {
-		e.currentTarget.parentElement
-			.querySelectorAll('div')
-			.forEach((div) => div.classList.remove('active'));
+  const handleToggle = (e) => {
+    e.currentTarget.parentElement
+      .querySelectorAll("div")
+      .forEach((div) => div.classList.remove("active"));
 
-		e.currentTarget.classList.add('active');
-		console.log('fired');
-	};
-	return (
-		<section className='mb-90'>
-			<h4>clients</h4>
-			<h2>Our clients</h2>
+    e.currentTarget.classList.add("active");
+    console.log("fired");
+  };
+  return (
+    <section className="mb-90">
+      <h4>clients</h4>
+      <h2>Our clients</h2>
 
-			<div className={styles.slide}>
-				<div className={`${styles.all} ${state}`}>
-					<div>
-						<img src='/assets/images/mtn.png' alt='MTN' />
-						<img src='/assets/images/mtn.png' alt='MTN' />
-					</div>
+      <div className={styles.slide}>
+        <div className={`${styles.all} ${state}`}>
+          <div>
+            <img src="/assets/images/mtn.png" alt="MTN" />
+          </div>
 
-					<div>
-						<img src='/assets/images/mtn.png' alt='MTN' />
-						<img src='/assets/images/mtn.png' alt='MTN' />
-					</div>
+          <div>
+            <img src="/assets/images/etisalat-logo.png" alt="etisalat" />
+          </div>
 
-					<div>
-						<img src='/assets/images/mtn.png' alt='MTN' />
-						<img src='/assets/images/mtn.png' alt='MTN' />
-					</div>
+          <div>
+            <img src="/assets/images/arm-logo.png" alt="ARM" />
+          </div>
 
-					<div>
-						<img src='/assets/images/mtn.png' alt='MTN' />
-						<img src='/assets/images/mtn.png' alt='MTN' />
-					</div>
-				</div>
-				<div className={styles.controllers}>
-					<div
-						className='active'
-						onClick={(e) => {
-							setState('one');
-							handleToggle(e);
-						}}
-					></div>
-					<div
-						onClick={(e) => {
-							setState('two');
-							handleToggle(e);
-						}}
-					></div>
-					<div
-						onClick={(e) => {
-							setState('three');
-							handleToggle(e);
-						}}
-					></div>
-					<div
-						onClick={(e) => {
-							setState('four');
-							handleToggle(e);
-						}}
-					></div>
-				</div>
-			</div>
-		</section>
-	);
+          <div>
+            <img src="/assets/images/stanbic.png" alt="stanbic" />
+          </div>
+        </div>
+        <div className={styles.controllers}>
+          <div
+            className="active"
+            onClick={(e) => {
+              setState("one");
+              handleToggle(e);
+            }}
+          ></div>
+          <div
+            onClick={(e) => {
+              setState("two");
+              handleToggle(e);
+            }}
+          ></div>
+          <div
+            onClick={(e) => {
+              setState("three");
+              handleToggle(e);
+            }}
+          ></div>
+          <div
+            onClick={(e) => {
+              setState("four");
+              handleToggle(e);
+            }}
+          ></div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Clients;
